@@ -1,0 +1,32 @@
+.loader {
+  height: 40px;
+  transform-origin: center;
+  animation: rotate 3s linear infinite;
+}
+
+.circle {
+  display: inline-block;
+  background: purple;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  animation: grow 1.5s linear infinite;
+  transform: scale(0)
+}
+
+.circle:nth-child(2) {
+  background: palevioletred;
+  animation-delay: 0.75s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1)
+  }
+}
